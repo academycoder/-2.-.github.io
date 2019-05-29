@@ -33,12 +33,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
-a { text-decoration: none; }
+a { 
+  text-decoration: none; 
+  color: rgba(31, 32, 65, 0.5);
+}
 
 ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-size: 14px;
 }
 
 section, .section {
@@ -53,6 +57,39 @@ section, .section {
   @media screen and (max-width: $desktopWidth) {
     padding: 20px 0;
   }
+}
+
+header {
+  margin: auto;
+  width: 1440px;
+  height: 70px;
+  .header {
+    display: flex;
+    width: 1160px;
+    margin: auto;
+    align-items: center;
+    &__buttons {
+      a {
+        padding: 10px 20px;
+        border-radius: 22px;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+      &.entry {
+        color: #8BA4F9;
+        border: #8BA4F9 solid 2px;
+      }
+      &.reg {
+        color: #fff;
+        background: #8BA4F9;
+      }
+    }
+  }
+  
+}
+
+.header__nav li {
+  display: inline-block;
 }
 
 .wrapper {
@@ -84,6 +121,7 @@ section, .section {
     max-width: smPhoneWidth;
   }
 }
+
 
 // Modules
 @import "modules/wrapper.scss";
