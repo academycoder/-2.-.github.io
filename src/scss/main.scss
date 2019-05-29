@@ -61,11 +61,11 @@ section, .section {
 
 header {
   margin: auto;
-  width: 1440px;
   height: 70px;
   .header {
+    padding: 15px 0px;
     display: flex;
-    width: 1160px;
+    max-width: 1160px;
     margin: auto;
     align-items: center;
     justify-content: space-between;
