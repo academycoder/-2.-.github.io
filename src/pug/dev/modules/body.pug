@@ -8,12 +8,11 @@ section
         .main__reserve__date
           .block
             p Прибытие
-            input(type="text" size="10")
+            input.date(type="text" size="10" placeholder='ДД.ММ.ГГГГ')
           .block
             p Выезд
-            input(type="text" size="10")
+            input.date(type="text" size="10" placeholder='ДД.ММ.ГГГГ')
         .main__reserve__guest
           p Гости
-          input(type="text" size="35")
-        .main__reserve__button
-          a(class="main__reserve__button reg" href="#") Подобрать номер
+          input.guest(type="text" size="35" placeholder='Сколько гостей')
+        a(href="#").main__reserve__button Подобрать номер
