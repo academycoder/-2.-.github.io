@@ -9,13 +9,13 @@ html {
 	color: $mainFontColor;
   height: 100%;
   @media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
+		// font-size: 16px;
   }
   @media screen and (max-width: $tableWidth) {
-		font-size: 15px;
+		// font-size: 15px;
   }
   @media screen and (max-width: $phoneWidth) {
-		font-size: 14px;
+		// font-size: 14px;
   }
 }
 
@@ -27,6 +27,11 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -45,17 +50,25 @@ ul, li {
   font-size: 14px;
 }
 
+img {
+  background-attachment: fixed;
+  width: 100%;
+}
+
 section, .section {
+  margin: auto;
+  max-width: 1440px;
+  background-repeat: no-repeat;
   position: relative;
-  padding: 40px 0;
+  padding: 0px;
   @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
+    
   }
   @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
+    
   }
   @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
+    
   }
 }
 
@@ -63,9 +76,9 @@ header {
   margin: auto;
   height: 70px;
   .header {
+    max-width: 1160px;
     padding: 15px 0px;
     display: flex;
-    max-width: 1160px;
     margin: auto;
     align-items: center;
     justify-content: space-between;
@@ -84,7 +97,7 @@ header {
         font-size: 12px;
       }
       &.entry {
-        color: #8BA4F9;
+        color: $purplecol;
         border: #8BA4F9 solid 2px;
         margin-right: 20px;
       }
@@ -94,8 +107,47 @@ header {
       }
     }
   }
-  
 }
+
+.main {
+  max-width: 1160px;
+  margin: auto;
+  &__reserve {
+    position: absolute;
+    width: 380px;
+    height: 374px;
+    left: 140px;
+    top: 70px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    &__text {
+      margin: 40px 30px 0px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__date {
+      margin: 20px 30px 0px;
+      display: flex;
+      flex-direction: row;
+      height: 44px;
+    }
+    &__guest {
+      margin: 20px 30px 0px;
+      height: 44px;
+    }
+    &__button {
+      margin: 30px;
+      height: 44px;
+      
+    }
+  }
+}
+
 
 .header__nav li {
   display: inline-block;
@@ -121,16 +173,15 @@ header {
   margin: 0 auto;
   max-width: $desktopWidth;
   @media screen and (max-width: $smDesktopWidth) {
-    max-width: tableWidth;
+    // max-width: tableWidth;
   }
   @media screen and (max-width: $tableWidth) {
-    max-width: phoneWidth;
+    // max-width: phoneWidth;
   }
   @media screen and (max-width: $phoneWidth) {
-    max-width: smPhoneWidth;
+    // max-width: smPhoneWidth;
   }
 }
-
 
 // Modules
 @import "modules/wrapper.scss";
