@@ -83,7 +83,8 @@ img {
 }
 
 .img {
-  position: relative;
+  background-image: url(../img/Background/image3.png);
+  height: 850px;
 }
 
 section, .section {
@@ -142,9 +143,10 @@ header {
   max-width: 1160px;
   margin: auto;
   position: relative;
+  height: 850px;
   &__reserve {
     position: absolute;
-    top: -760px;
+    top: 70px;
     max-width: 380px;
     max-height: 374px;
     background: #FFFFFF;

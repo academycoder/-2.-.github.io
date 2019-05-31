@@ -24,7 +24,13 @@ module.exports = {
     publicPath: '/'
   },
   module: {
-    rules: [{
+    rules: [
+      {
+      test    : /\.(png|jpg|svg)$/,
+        include : path.join(__dirname, 'img'),
+        loader  : 'url-loader?limit=30000&name=images/[name].[ext]'
+    },
+      {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: '/node_modules/'
