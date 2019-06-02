@@ -1,30 +1,11 @@
-// JS - ./js/index.js
-import './js/'
+import AppService from './modules/app.service'
+import {config} from './modules/config'
+import './modules/header.component'
+import './css/index.css'// Импортирую css файлы
+import './less/index.less'// Импортирую less файлы
+import './scss/index.scss'// Импортирую scss файлы
 
-// SCSS
-import './scss/main.scss'
+console.log('Config key: ', config.key)
 
-// CSS (example)
-import './css/main.css'
-
-// Bootstrap (example)
-// import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
-
-// Vue.js
-window.Vue = require('vue')
-import store from './store'
-
-// Vue components (for use in html)
-Vue.component('example-component', require('./components/Example.vue').default)
-
-// Vue init
-const app = new Vue({
-  data () {
-    return {
-      showExampleComponent: false,
-    }
-  },
-  store,
-  el: '#app'
-})
+const service = new AppService('Hello WOrld!')
+service.log()
