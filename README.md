@@ -1,11 +1,6 @@
 # Webformyself
 
-Это моя сборка
+2 этап. Верстка страниц
 
-Команды
-
-npm run build
-Команда для продакшена
-
-npm run start
-Запускает локальный сервер
+Landing page
+https://fillika.github.io/testpageforme.github.io/
