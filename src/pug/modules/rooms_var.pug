@@ -1,0 +1,36 @@
+mixin var_room (link, number, luxe, price, count)
+  .rooms_variables_item
+    img(src=link, alt="luxe" width='270px')
+    .rooms_variables_item_text
+      .rooms_variables_item_text_number
+        span.number=number
+        span.luxe=luxe
+      .rooms_variables_item_text_price
+        span.price=price 
+        |  в сутки
+    .rooms_variables_item_rating
+      .rooms_variables_item_rating_stars
+      .rooms_variables_item_rating_comment
+        span.comment 
+          b=count 
+          |  отзывов
+
+section.rooms
+  .rooms_settings
+  .rooms_variables
+    p Номера, которые мы для вас подобрали
+    +var_room ('images/rooms/room_1/main.png','№ 888',' люкс','9 990','145')
+    +var_room ('images/rooms/room_1/main1.png','№ 840','','9 990','65')
+    +var_room ('images/rooms/room_1/main2.png','№ 980','','8 500','35')
+    +var_room ('images/rooms/room_1/main3.png','№ 856','','7 300','19')
+    +var_room ('images/rooms/room_1/main4.png','№ 740','','6 000','44')
+    +var_room ('images/rooms/room_1/main5.png','№ 982','','5 800','56')
+    +var_room ('images/rooms/room_1/main6.png','№ 678','','5 500','45')
+    +var_room ('images/rooms/room_1/main7.png','№ 450','','5 300','39')
+    +var_room ('images/rooms/room_1/main8.png','№ 350','','5 000','77')
+    +var_room ('images/rooms/room_1/main9.png','№ 666','','5 000','25')
+    +var_room ('images/rooms/room_1/main10.png','№ 444','','5 000','15')
+    +var_room ('images/rooms/room_1/main11.png','№ 352','','5 000','55')
+        
+
+

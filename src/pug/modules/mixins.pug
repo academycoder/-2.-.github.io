@@ -1,0 +1,17 @@
+extends rooms_var
+
+mixin var_room (link, number, luxe, price, count)
+  .rooms_variables_item
+    img(src=link, alt="luxe" width='270px')
+    .rooms_variables_item_text
+      .rooms_variables_item_text_number
+        span.number=number
+        span.luxe=luxe
+      .rooms_variables_item_text_price
+        span.price=price
+    .rooms_variables_item_rating
+      .rooms_variables_item_rating_stars
+      .rooms_variables_item_rating_comment
+        span.comment 
+          b=count 
+          |отзывов

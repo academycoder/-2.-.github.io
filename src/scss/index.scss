@@ -274,6 +274,22 @@ footer {
   }
 }
 
+.rooms {
+  max-width: 1160px;
+  margin: auto;
+  &_variables {
+    p {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &_item {
+      width: 270px;
+      height: 257px;
+    }
+  }
+}
+
+
 .header__nav li {
   display: inline-block;
 }
@@ -291,22 +307,7 @@ footer {
   min-height: 100vh;
 }
 
-.container {
-  width: 100%;
-  flex: 0 0 auto;
-  position: relative;
-  margin: 0 auto;
-  max-width: $desktopWidth;
-  @media screen and (max-width: $smDesktopWidth) {
-    // max-width: tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    // max-width: phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    // max-width: smPhoneWidth;
-  }
-}
+
 
 // Modules
 @import "modules/wrapper.scss";
