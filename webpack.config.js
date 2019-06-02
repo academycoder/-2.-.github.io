@@ -35,8 +35,8 @@ module.exports = {
       filename: 'style.css'
     }),
     new CopyPlugin([{
-        from: 'src/img',
-        to: 'img'
+        from: 'src/pug/img/',
+        to: 'images'
       } // Создал копирование из папки src/img в папку дист
     ])
   ],
@@ -47,9 +47,9 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|svg|gif)$/, // Указываем расширение файла, на который будет влиять loader
-        loader: 'file-loader',
+        loader: 'file-loader', // Это loader для изображений
         options: {
-          name: '[name].[ext]',
+          name: 'images/[name].[ext]',
         }
       },
       {
