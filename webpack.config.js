@@ -33,12 +33,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({ // Берет мой CSS файл и компилирует его в отдельный файл style css
       filename: 'style.css'
-    }),
+    })/*,
     new CopyPlugin([{
-        from: 'src/pug/img/',
+        from: 'src/img/',
         to: 'images'
       } // Создал копирование из папки src/img в папку дист
-    ])
+    ])*/
   ],
   module: {
     rules: [{
