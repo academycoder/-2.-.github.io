@@ -277,14 +277,23 @@ footer {
 .rooms {
   max-width: 1160px;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   &_variables {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
     p {
       font-size: 24px;
       line-height: 30px;
+      grid-column: 1 / -1;
     }
     &_item {
       width: 270px;
       height: 257px;
+      img {
+        border-radius: 4px 4px 0 0;
+      }
     }
   }
 }
